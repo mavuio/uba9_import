@@ -1,0 +1,7 @@
+plsm mysql.ex:
+
+
+        |> Enum.filter(&(&1.name !== "Group"))
+
+
+DI.my_select([:uid,:pid,:bodytext]) |> Macro.expand(__ENV__) |> Macro.to_string |> IO.puts
